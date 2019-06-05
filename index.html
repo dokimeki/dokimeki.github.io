@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	* {
+		padding: 0px;
+		margin: 0px;
+	}
+	#white {
+		width: 1200px;
+		margin: auto;
+	}
+	header{
+		width: 1200px;
+		height: 150px;
+		margin-top: 10px;
+		border: solid 0px #cccccc;
+	}
+	#logo {
+		float: left;
+	}
+	#top {
+		float: right;
+		margin: 20px 10px 70px 0;
+		font-size: 13px;
+	}
+	nav {
+		display: inline-block;
+		width: 950px;
+		height: 50px;
+		margin-top: 30px;
+		border: solid 0px #cccccc;
+		float: left;
+		background-color: #FF0000
+	}
+	span > img {
+		width: 100px;
+		height: 45px;
+		float: left;
+		margin: 5px 41px;
+		list-style-type: none;
+		margin-top: 2px;
+	}
+	.dropdown-content {
+		display: none; /* 크기 설정 하지 않겠다! 라는 뜻 */
+		position: absolute; 
+		background-color: #FFFFFF;
+		width: 100px; /* 리스트의 크기 */
+		padding: 12px 16px;
+		margin: 50px 25px;
+		font-size: 13px;
+		color: #550000;
+		text-align: center;
+		border: dashed 1px #cccccc;
+	}
+	.menu {
+		display: inline-block;
+	}
+	.menu:hover .dropdown-content {
+		display: block; 
+		/* 마우스 포인터를 가져가면 블록으로 보여지게 하라 */
+		/* 이 코드 때문에 드롭다운으로 보임 */
+	}
+	.dropdown-content p {
+		margin: 15px 0;
+	}
+	a {
+		color: black;
+		text-decoration: none;
+	}
+	li {
+		list-style-type: none;
+	}
+	section {
+		float: left;
+		margin-top: 10px;
+		border: solid 0px #cccccc;
+	}
+	#thumbnail {
+		width: 850px;
+		height: 400px;
+		background-image: url('./img/thumbnail.jpg');
+		background-repeat: no-repeat;
+		margin-left: 60px;
+	}
+	#link_button {
+		width: 200px;
+		height: 80px;
+		margin: 300px 10px;
+	}
+	aside {
+		float: left;
+		width: 200px;
+		padding: 35px 12px;
+		margin-left: 30px;
+		margin-top: 15px;
+		border: dotted 2px #cccccc;
+		font-size: 20px;
+		text-align: center;
+	}
+	aside li {
+		margin-bottom: 25px;
+	}
+	#contents {
+		border: dashed 2px #cccccc;
+		margin: 35px 80px 30px 80px;
+		color: #550000;
+		font-size: 30px;
+		font-weight: bold;
+		text-align: center;
+	}
+	tr, td {
+		padding: 15px;
+	}
+	footer {
+		width: 1150px;
+		height: 100px;
+		margin-top: 10px;
+		margin-left: 40px;
+		background-color: #2B2B2B;
+		color: white;
+	}
+	#text {
+		float: left;
+		margin: 30px 0 0 20px;
+		padding: 10px;
+	}
+	#address {
+		float: right;
+		margin: 30px 30px 0 0px;
+		padding: 10px;
+	}
+	.clear {
+		clear: both;
+	}
+</style>
+</head>
+<body>
+	<div id='white'>
+	<header>
+		<div id='top'>
+		로그인｜회원가입｜공지사항
+		</div>
+		<div class='clear'></div> <!-- float 속성 해제 -->
+		<div id='logo'>
+			<a href='index.html'><img src='./img/logo.jpg' width='230'></a>
+		</div>
+		<nav>
+			<div class='menu'>
+			<span> <img src='./img/petstar_button.png' height='40'> </span>
+				<div class='dropdown-content'>
+					<p> 펫스타 </p>
+					<p> 펫튜브 </p>
+					<p> 펫툰 </p>
+				</div>
+			</div>
+			<div class='menu'>
+			<span> <img src='./img/pettube_button.png' height='40'> </span>
+				<div class='dropdown-content'>
+					<p> 크림<br>히어로즈 </p>
+					<p> 수리노을 </p>
+					<p> 이웃집의 백호 </p>
+					<p> 곰이탱이여우 </p>
+				</div>
+			</div>
+			<div class='menu'>
+			<span> <img src='./img/pettoon_button.png' height='40'> </span>
+				<div class='dropdown-content'>
+					<p> 극한견주 </p>
+					<p> 노곤하개 </p>
+					<p> 뽀짜툰 </p>
+					<p> 내 어린<br>고양이와<br>늙은 개 </p>
+				</div>
+			</div>
+			<div class='menu'>
+			<span> <img src='./img/gallery_button.png' height='40'> </span>
+				<div class='dropdown-content'>
+					<p> <a href='page01.html'>CATTUBE</a> </p>
+					<p> <a href='page02.html'>DOGTUBE</a> </p>
+					<p> CATTOON </p>
+					<p> DOGTOON </p>
+				</div>
+			</div>
+			<div class='menu'>
+			<span> <img src='./img/shop_button.png' height='40'> </span>
+				<div class='dropdown-content'>
+					<p> 텀블벅 </p>
+					<p> 굿즈샵 </p>
+					<p> 웹툰샵 </p>
+					<p> 굿즈 소식 </p>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div class='clear'></div> <!-- float 속성 해제 -->
+	<section id='thumbnail'>
+		<div id='link_button'>
+			<a href='https://youtu.be/bcp3i9SeFZQ' target='_blank'><img src='./img/link_button.png'></a>
+		</div>
+	</section>
+	<aside>
+		<ul>
+			<li> <img src='./img/submenu.png'> </li>
+			<li> UPDATE </li>
+			<li> SNS NEWS </li>
+			<li> <a href='https://www.youtube.com' target='_blank'><img src='./img/youtube.jpg' width='50'></a>
+				<a href='https://comic.naver.com/index.nhn' target='_blank'><img src='./img/naver.jpg' width='50'></a><br>
+				<a href='http://webtoon.daum.net' target='_blank'><img src='./img/daum.jpg' width='50'></a>
+				<a href='https://www.myktoon.com/web/homescreen/main.kt' target='_blank'><img src='./img/ktoon.jpg' width='50'></a> </li>
+		</ul>
+	</aside>
+	<div class='clear'></div>
+	<section id='contents'>
+		<table border='0'>
+			<tr>
+				<td colspan='2'> * PETSTAR LIST * </td>
+			<tr>
+				<td> <img src='./img/creamheroes_button.jpg' width='500'> </td>
+				<td> <img src='./img/corgibh_button.jpg' width='500'> </td>
+
+			</tr>
+			<tr>
+				<td> <img src='./img/surinoel_button.jpg' width='500'> </td>
+				<td> <img src='./img/shibagty_button.jpg' width='500'> </td>
+			</tr>
+			<tr>
+				<td> <img src='./img/polarsom_button.jpg' width='500'> </td>
+				<td> <img src='./img/cattoon_button.jpg' width='500'> </td>
+			</tr>
+			<tr>
+				<td> <img src='./img/lazydog_button.jpg' width='500'> </td>
+				<td> <img src='./img/catanddog_button.jpg' width='500'> </td>
+			</tr>
+		</table>
+	</section>
+	<div class='clear'></div> <!-- float 속성 해제 -->
+	<footer>
+		<div id='text'>
+			1851048 유지원 <br>
+			각 사진의 저작권은 원작자에게 있습니다.
+		</div>
+		<div id='address'>
+			**.***********@gmail.com
+		</div>
+	</footer>
+	</div>
+</body>
+</html>

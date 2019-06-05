@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> gallery_creamheroes </title>
+<style>
+	* {
+		padding: 0px;
+		margin: 0px;
+	}
+	#white {
+		width: 1200px;
+		margin: auto;
+	}
+	header{
+		width: 1200px;
+		height: 150px;
+		margin-top: 10px;
+		border: solid 0px #cccccc;
+	}
+	#logo {
+		float: left;
+	}
+	#top {
+		float: right;
+		margin: 20px 10px 70px 0;
+		font-size: 13px;
+	}
+	nav {
+		display: inline-block;
+		width: 950px;
+		height: 50px;
+		margin-top: 30px;
+		border: solid 0px #cccccc;
+		float: left;
+		background-color: #FF0000
+	}
+	span > img {
+		width: 100px;
+		height: 45px;
+		float: left;
+		margin: 5px 41px;
+		list-style-type: none;
+		margin-top: 2px;
+	}
+	.dropdown-content {
+		display: none; /* 크기 설정 하지 않겠다! 라는 뜻 */
+		position: absolute; 
+		background-color: #FFFFFF;
+		width: 100px; /* 리스트의 크기 */
+		padding: 12px 16px;
+		margin: 50px 25px;
+		font-size: 13px;
+		color: #550000;
+		text-align: center;
+		border: dashed 1px #cccccc;
+	}
+	.menu {
+		display: inline-block;
+	}
+	.menu:hover .dropdown-content {
+		display: block; 
+		/* 마우스 포인터를 가져가면 블록으로 보여지게 하라 */
+		/* 이 코드 때문에 드롭다운으로 보임 */
+	}
+	.dropdown-content p {
+		margin: 15px 0;
+	}
+	a {
+		color: black;
+		text-decoration: none;
+	}
+	li {
+		list-style-type: none;
+	}
+	section {
+		float: left;
+		margin-top: 10px;
+		border: solid 0px #cccccc;
+	}
+	table {
+		border-collapse: collapse;
+		border: dotted 2px #cccccc;
+		width: 1000px;
+		margin: 20px 100px;
+		text-align: center;
+		color: #550000;
+		font-size: 30px;
+		font-weight: bold;
+		text-align: center;
+	}
+	td {
+		padding: 15px;
+		border: dotted 2px #cccccc;
+	}
+	.next {
+		color: #550000;
+		font-size: 15px;
+	}
+	.gallery_picture {
+		width: 332px;
+	}
+	.picture_title {
+		color: black;
+		font-size: 18px;
+		font-weight: bold;
+		padding-bottom: 5px;
+	}
+	.gallery_text {
+		color: #550000;
+		font-size: 14px;
+		font-weight: normal;
+	}
+	footer {
+		width: 1150px;
+		height: 100px;
+		margin-top: 10px;
+		margin-left: 40px;
+		background-color: #2B2B2B;
+		color: white;
+	}
+	#text {
+		float: left;
+		margin: 30px 0 0 20px;
+		padding: 10px;
+	}
+	#address {
+		float: right;
+		margin: 30px 30px 0 0px;
+		padding: 10px;
+	}
+	.clear {
+		clear: both;
+	}
+</style>
+</head>
+<body>
+	<div id='white'>
+	<header>
+		<div id='top'>
+		로그인｜회원가입｜공지사항
+		</div>
+		<div class='clear'></div> <!-- float 속성 해제 -->
+		<div id='logo'>
+			<a href='index.html'><img src='./img/logo.jpg' width='230'></a>
+		</div>
+		<nav>
+			<div class='menu'>
+			<span> <img src='./img/petstar_button.png' height='40'> </span>
+				<div class='dropdown-content'>
+					<p> 펫스타 </p>
+					<p> 펫튜브 </p>
+					<p> 펫툰 </p>
+				</div>
+			</div>
+			<div class='menu'>
+			<span> <img src='./img/pettube_button.png' height='40'> </span>
+				<div class='dropdown-content'>
+					<p> 크림<br>히어로즈 </p>
+					<p> 수리노을 </p>
+					<p> 이웃집의 백호 </p>
+					<p> 곰이탱이여우 </p>
+				</div>
+			</div>
+			<div class='menu'>
+			<span> <img src='./img/pettoon_button.png' height='40'> </span>
+				<div class='dropdown-content'>
+					<p> 극한견주 </p>
+					<p> 노곤하개 </p>
+					<p> 뽀짜툰 </p>
+					<p> 내 어린<br>고양이와<br>늙은 개 </p>
+				</div>
+			</div>
+			<div class='menu'>
+			<span> <img src='./img/gallery_button.png' height='40'> </span>
+				<div class='dropdown-content'>
+					<p> <a href='page01.html'>CATTUBE</a> </p>
+					<p> <a href='page02.html'>DOGTUBE</a> </p>
+					<p> CATTOON </p>
+					<p> DOGTOON </p>
+				</div>
+			</div>
+			<div class='menu'>
+			<span> <img src='./img/shop_button.png' height='40'> </span>
+				<div class='dropdown-content'>
+					<p> 텀블벅 </p>
+					<p> 굿즈샵 </p>
+					<p> 웹툰샵 </p>
+					<p> 굿즈 소식 </p>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div class='clear'></div> <!-- float 속성 해제 -->
+	<section>
+		<table border='1'>
+			<tr>
+				<td colspan="3"> CREAMHEROES GALLERY<br>
+					<a href='page01.html'><sapn class='next'> <b>←</b>GALLERY : CATTUBE</sapn></a>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href='page04.html'><span class='next'>SURINOEL GALLERY<b>→</b></span></a> </td>
+			</tr>
+			<tr>
+				<td class='gallery_picture'> <img src='./img/cg_picture1.jpg' width='300'> </td>
+				<td class='gallery_picture'> <img src='./img/cg_picture2.jpg' width='300'> </td>
+				<td class='gallery_picture'> <img src='./img/cg_picture3.jpg' width='300'> </td>
+			</tr>
+			<tr>
+				<td class='gallery_text'> <p class='picture_title'>파프리카가 먹고 싶은 루루</p>
+				#크림히어로즈 #Creamheroes #루루 #lulu </td>
+				<td class='gallery_text'> <p class='picture_title'>사랑해 티티</p>
+				#크림히어로즈 #Creamheroes #티티 #TT </td>
+				<td class='gallery_text'> <p class='picture_title'>물 마시는 루루</p>
+				#크림히어로즈 #Creamheroes #루루 #lulu </td>
+			</tr>
+			<tr>
+				<td class='gallery_picture'> <img src='./img/cg_picture4.jpg' width='300'> </td>
+				<td class='gallery_picture'> <img src='./img/cg_picture5.jpg' width='300'> </td>
+				<td class='gallery_picture'> <img src='./img/cg_picture6.jpg' width='300'> </td>
+			</tr>
+			<tr>
+				<td class='gallery_text'> <p class='picture_title'>새 집을 얻은 디디</p>
+				#크림히어로즈 #Creamheroes #디디 #DD </td>
+				<td class='gallery_text'> <p class='picture_title'>구멍으로 튀어나온 루루</p>
+				#크림히어로즈 #Creamheroes #루루 #lulu </td>
+				<td class='gallery_text'> <p class='picture_title'>유리에서 내려와!</p>
+				#크림히어로즈 #Creamheroes #디디 #DD </td>
+			</tr>
+			<tr>
+				<td class='gallery_picture'> <img src='./img/cg_picture7.jpg' width='300'> </td>
+				<td class='gallery_picture'> <img src='./img/cg_picture8.jpg' width='300'> </td>
+				<td class='gallery_picture'> <img src='./img/cg_picture9.jpg' width='300'> </td>
+			</tr>
+			<tr>
+				<td class='gallery_text'> <p class='picture_title'>설거지 하는데 찾아온 라라</p>
+				#크림히어로즈 #Creamheroes #라라 #lala </td>
+				<td class='gallery_text'> <p class='picture_title'>와르르 멘션</p>
+				#크림히어로즈 #Creamheroes </td>
+				<td class='gallery_text'> <p class='picture_title'>티티 수녀님</p>
+				#크림히어로즈 #Creamheroes #티티 #TT </td>
+			</tr>
+		</table>
+	</section>
+	<div class='clear'></div> <!-- float 속성 해제 -->
+	<footer>
+		<div id='text'>
+			1851048 유지원 <br>
+			각 사진의 저작권은 원작자에게 있습니다.
+		</div>
+		<div id='address'>
+			**.***********@gmail.com
+		</div>
+	</footer>
+	</div>
+</body>
+</html>
