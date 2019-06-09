@@ -93,6 +93,9 @@
 		padding: 30px;
 		border: dotted 2px #cccccc;
 	}
+	.switch:hover {
+ 		transform: rotateX(35deg);
+	}
 	.next {
 		color: #550000;
 		font-size: 15px;
@@ -162,8 +165,8 @@
 				<div class='dropdown-content'>
 					<p> <a href='page01.html'>CATTUBE</a> </p>
 					<p> <a href='page02.html'>DOGTUBE</a> </p>
-					<p> CATTOON </p>
-					<p> DOGTOON </p>
+					<p> <a href='page07.html'>CATTOON</a> </p>
+					<p> <a href='page08.html'>DOGTOON</a> </p>
 				</div>
 			</div>
 			<div class='menu'>
@@ -184,9 +187,11 @@
 				<td colspan="4"> GALLERY : CATTUBE </td>
 			</tr>
 			<tr>
-				<td class='next'> ◀DOGTOON </td>
-				<td> <a href='page03.html'><img src='./img/creamheroes_gallery_button.jpg' width='300'></a> </td>
-				<td> <a href='page04.html'><img src='./img/surinoel_gallery_button.jpg' width= '300'></a> </td>
+				<td class='next'> <a href='page08.html'>◀DOGTOON</a> </td>
+				<td> <a href='page03.html'>
+					<img src='./img/creamheroes_gallery_button.jpg' width='300' class='switch'></a> </td>
+				<td> <a href='page04.html'>
+					<img src='./img/surinoel_gallery_button.jpg' width='300' class='switch'></a> </td>
 				<td class='next'> <a href='page02.html'>DOGTUBE▶</a> </td>
 			</tr>
 		</table>
