@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title> gallery_dogtoon </title>
+	<title> polarsom </title>
 <style>
 	* {
 		padding: 0px;
@@ -78,36 +78,51 @@
 		margin-top: 10px;
 		border: solid 0px #cccccc;
 	}
-	table {
-		border-collapse: collapse;
-		border: dotted 2px #cccccc;
-		width: 800px;
-		margin: 20px 95px;
-		text-align: center;
-		color: #550000;
+	h1 {
 		font-size: 30px;
+		margin: 20px 450px;
+	}
+	.click {
+		width: 500px;
+		height: 20px;
+		padding: 20px;
+		margin: 15px;
+		background-color: #white;
+		border: dashed 2px #cccccc;
+		font-size: 17px;
 		font-weight: bold;
+		margin: 0 auto;
 		text-align: center;
 	}
-	td {
-		padding: 30px;
-		border: dotted 2px #cccccc;
+	.click li {
+		display: inline;
 	}
-	.switch {
-		transition: transform 500ms;
-	}
-	.switch:hover {
- 		transform: rotateX(35deg);
- 		transition: transform 500ms;
-	}
-	.next {
-		color: #550000;
-		font-size: 15px;
-	}
-	#text {
+		#text {
 		float: left;
 		margin: 30px 0 0 20px;
 		padding: 10px;
+	}
+	#first {
+		width: 700px;
+	}
+	.top-text {
+		font-size: 20px;
+		margin: 10px;
+	}
+	table, tr, th, td {
+		border-collapse: collapse;
+		border: dashed 2px #FFDE72;
+		background-color: white;
+		padding: 10px;
+		text-align: center;
+	}
+	.info {
+		margin: 20px;
+		width: 1200px;
+	}
+	.text-info {
+		font-size: 17px;
+		margin: 15px;
 	}
 	#address {
 		float: right;
@@ -186,20 +201,71 @@
 	</header>
 		<div class='clear'></div> <!-- float 속성 해제 -->
 	<section>
-		<table border='1'>
-			<tr>
-				<td colspan="4"> GALLERY : DOGTOON </td>
-			</tr>
-			<tr>
-				<td class='next'> <a href='page07.html'>◀CATTOON</a> </td>
-				<td> <a href='page11.html'>
-					<img src='./img/polarsom_gallery_button.jpg' width='300' class='switch'></a> </td>
-				<td> <a href='page12.html'>
-					<img src='./img/lazydog_gallery_button.jpg' width='300' class='switch'></a> </td>
-				<td class='next'> <a href='page01.html'>CATTUBE▶</a> </td>
-			</tr>
-		</table>
-	</section>
+		<h1> + 극한견주POLARSOM + </h1>
+		<ul class='click'>
+			<li><a href='#first'>정보</a></li>
+			<li> ｜ </li>
+			<li><a href='#second'>사람</a></li>
+			<li> ｜ </li>
+			<li><a href='#third'>동물</a></li>
+		</ul>
+		<section id='first'>
+			<h3 class='top-text'> 01. 정보</h3>
+			<table border='1'>
+				<tr>
+					<td colspan='2'> <img src='./img/polarsom.png'> </td>
+				</tr>
+				<tr>
+					<th> 이름 </th>
+					<td> 극한견주 </td>
+				</tr>
+				<tr>
+					<th> 글/그림 </th>
+					<td> 마일로 </td>
+				</tr>
+				<tr>
+					<th> 플랫폼 </th>
+					<td> 케이툰 </td>
+				</tr>
+				<tr>
+					<th> 장르 </th>
+					<td> 일상/개그 </td>
+				</tr>
+				<tr>
+					<th> 연재 시작 </th>
+					<td> 2017.03.29. </td>
+				</tr>
+				<tr>
+					<th> 연재주소 </th>
+					<td> <a href='https://www.myktoon.com/web/works/list.kt?worksseq=6552'>링크</a> </td>
+				</tr>
+				<tr>
+					<td colspan='2'> 마일로 작가가 케이툰에서 연재하는 일상/개그 장르의 웹툰.<br><br> 작가가 키우는 사모예드 <b>솜이</b>와 함께 하는 일상툰! 귀여운 그림과 개그와는 다르게 대형견에 대한 환상을 여지없이 박살내는 높은 현실성을 경험하라! </td>
+			</table>
+		</section>
+		<section id='second'>
+			<h3 class='top-text'> 02. 사람 </h3>
+			<h5 class='text-info'> 02-1. 마일로 </h5>
+			<img src='./img/polarsom_mil.jpg' width='500'>
+			<div class='info'>작가 본인. 넘치는 힘을 주체 못하는 솜이를 돌보느라 허리가 휜다. 아직 초보 견주로, 작중에서 미숙한 모습이 종종 나타난다. 걱정이 상당히 많은 편인데, 주인 닮는다고 솜이도 걱정이 많은 개라고 한다.
+			</div>
+			<h5 class='text-info'> 02-2. 박지연 </h5>
+			<div class='info'>레진코믹스 웹툰 작가로 마일로의 언니이며, 같이 솜이를 키우며 살고 있다. 밤에 분리불안으로 우는 솜이 곁에 같이 자주는 상냥한 모습을 보인다. 작가 마일로와 마찬가지로 넘치는 힘의 솜이 때문에 피로가 이만저만이 아니다.</div>
+		</section>
+		<section id='third'>
+			<h3 class='top-text'> 03. 동물 </h3>
+			<img src='./img/polarsom_som.jpg' width='500'>
+			<h5 class='text-info'> 03-1. 솜이 </h5>
+			<div class='info'>
+				웹툰의 주인공으로, 작가 가족이 부산에서 살다 인천의 마당 넓은 전원 주택에 살게 되면서 키우게 된 강아지이다. 마일로가 아기 때 처음 보자마자 너무 예쁘다고 데려왔다고 한다. 큰 덩치에 비하여 겁이 많고, 한때 집에 사람을 들일 수 없을 정도로 사고를 하도 많이 쳐서 웃기게 묘사한 만화와는 다르게 작가 본인과 가족들은 마음 고생이 심했다고 한다. 솜이는 별도의 트위터 계정을 가지고 있으며, 귀여운 외모와 작가 마일로의 입담으로 SNS에서 인기를 자랑한다.
+			</div>
+			<h5 class='text-info'> 03-2. 뽀솜이 </h5>
+			<div class='info'>
+				햄스터를 키우고 싶어했던 마일로가 데려온 유기 햄스터로, 원조인 솜이를 닮았는지 만만치 않게 사고를 쳐 작가의 힘듦이 두 배 이상이 되었다.
+			</div>
+			</section>
+			</section>
+		</section>
 		<div class='clear'></div> <!-- float 속성 해제 -->
 	<footer>
 		<div id='text'>

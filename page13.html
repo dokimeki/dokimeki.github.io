@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title> gallery_dogtoon </title>
+	<title> petstar </title>
 <style>
 	* {
 		padding: 0px;
@@ -78,36 +78,24 @@
 		margin-top: 10px;
 		border: solid 0px #cccccc;
 	}
-	table {
-		border-collapse: collapse;
-		border: dotted 2px #cccccc;
-		width: 800px;
-		margin: 20px 95px;
-		text-align: center;
-		color: #550000;
-		font-size: 30px;
-		font-weight: bold;
-		text-align: center;
-	}
-	td {
-		padding: 30px;
-		border: dotted 2px #cccccc;
-	}
-	.switch {
-		transition: transform 500ms;
-	}
-	.switch:hover {
- 		transform: rotateX(35deg);
- 		transition: transform 500ms;
-	}
-	.next {
-		color: #550000;
-		font-size: 15px;
-	}
-	#text {
+		#text {
 		float: left;
 		margin: 30px 0 0 20px;
 		padding: 10px;
+	}
+	h1 {
+		font-size: 30px;
+		margin: 20px 50px 0 50px;
+	}
+	#main {
+		width: 500px;
+		margin: 50px;
+		float: left;
+	}
+	#file {
+		transform: rotate(15deg);
+		padding: 15px;
+		margin-top: 80px;
 	}
 	#address {
 		float: right;
@@ -186,20 +174,11 @@
 	</header>
 		<div class='clear'></div> <!-- float 속성 해제 -->
 	<section>
-		<table border='1'>
-			<tr>
-				<td colspan="4"> GALLERY : DOGTOON </td>
-			</tr>
-			<tr>
-				<td class='next'> <a href='page07.html'>◀CATTOON</a> </td>
-				<td> <a href='page11.html'>
-					<img src='./img/polarsom_gallery_button.jpg' width='300' class='switch'></a> </td>
-				<td> <a href='page12.html'>
-					<img src='./img/lazydog_gallery_button.jpg' width='300' class='switch'></a> </td>
-				<td class='next'> <a href='page01.html'>CATTUBE▶</a> </td>
-			</tr>
-		</table>
-	</section>
+		<h1> ▶ 펫스타! Petstar </h1>
+		<p id='main'>
+			 &nbsp;&nbsp;이 사이트를 방문한 당신이 현대를 살아가고 있는 현대인이라면, 당신 혹은 당신의 주변. 이 두 사람 중 반드시, 적어도 한 사람에게는 존재할 것이 하나 있다. 밥? 집? 차? 정답에 대하여 밥도, 집도, 차도 아닌 사이트 주는 <b>반려동물</b> 이라고 답하고 싶다. 애완동물이라는 표현하던 것에서 반려동물이라고 표현이 변화해가는 시대를 살아가고 있다. 더 이상 집을 지키기 위해서나 가지고 놀기 위한 용도 뿐만이 아닌 그들을 끝까지 책임지는 것은 물론, 함께 하는 것에 의의를 두는 것이다. <br><br> &nbsp;&nbsp;그러한 시대의 변화에서 한 걸음 더 나아가, 우리는 SNS 혹은 다양한 장르의 매체를 통해 자신이 아닌 반려동물을 소개하거나 알리기도 한다. 처음의 목적은 소소하게 반려동물을 사랑하는 사람들만의 커뮤니티를 형성하는 것이었다면, 지금은 우리가 지나가는 길에 연예인을 보고 '연예인 XX씨 아니세요?'하고 묻게 되는 상황이 반려동물을 대상으로 일어날 수 있다는 말이다. <br><br> &nbsp;&nbsp; 해당 사이트는 인간 스타가 아닌 반려동물 스타를 <b>Pet+Star(별)= PetSTAR</b> 라고 정의하였으며, 편의를 위하여 그들이 활동하는 그라운드를 기준으로 다시 <b>펫튜브</b>과 <b>펫툰</b>으로 분류하여 소개한다. </p>
+		<img src='./img/logo.jpg' width='550' id='file'>
+		</section>
 		<div class='clear'></div> <!-- float 속성 해제 -->
 	<footer>
 		<div id='text'>

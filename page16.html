@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> creamheroes </title>
+<style>
+	* {
+		padding: 0px;
+		margin: 0px;
+	}
+	#white {
+		width: 1200px;
+		margin: auto;
+	}
+	header{
+		width: 1200px;
+		height: 150px;
+		margin-top: 10px;
+		border: solid 0px #cccccc;
+	}
+	#logo {
+		float: left;
+	}
+	#top {
+		float: right;
+		margin: 20px 10px 70px 0;
+		font-size: 13px;
+	}
+	nav {
+		display: inline-block;
+		width: 950px;
+		height: 50px;
+		margin-top: 30px;
+		border: solid 0px #cccccc;
+		float: left;
+		background-color: #FF0000
+	}
+	span > img {
+		width: 100px;
+		height: 45px;
+		float: left;
+		margin: 5px 41px;
+		list-style-type: none;
+		margin-top: 2px;
+	}
+	.dropdown-content {
+		display: none; /* 크기 설정 하지 않겠다! 라는 뜻 */
+		position: absolute; 
+		background-color: #FFFFFF;
+		width: 100px; /* 리스트의 크기 */
+		padding: 12px 16px;
+		margin: 50px 25px;
+		font-size: 13px;
+		color: #550000;
+		text-align: center;
+		border: dashed 1px #cccccc;
+	}
+	.menu {
+		display: inline-block;
+	}
+	.menu:hover .dropdown-content {
+		display: block; 
+		/* 마우스 포인터를 가져가면 블록으로 보여지게 하라 */
+		/* 이 코드 때문에 드롭다운으로 보임 */
+	}
+	.dropdown-content p {
+		margin: 15px 0;
+	}
+	a {
+		color: black;
+		text-decoration: none;
+	}
+	li {
+		list-style-type: none;
+	}
+	section {
+		float: left;
+		margin-top: 10px;
+		border: solid 0px #cccccc;
+	}
+	h1 {
+		font-size: 30px;
+		margin: 20px 450px;
+	}
+	.click {
+		width: 500px;
+		height: 20px;
+		padding: 20px;
+		margin: 15px;
+		background-color: #white;
+		border: dashed 2px #cccccc;
+		font-size: 17px;
+		font-weight: bold;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.click li {
+		display: inline;
+	}
+	#cat li {
+		display: inline;
+	}
+		#text {
+		float: left;
+		margin: 30px 0 0 20px;
+		padding: 10px;
+	}
+	.top-text {
+		font-size: 20px;
+		margin: 10px;
+	}
+	table, tr, th, td {
+		border-collapse: collapse;
+		border: dashed 2px #FFDE72;
+		background-color: white;
+		padding: 10px;
+		text-align: center;
+	}
+	.info {
+		margin: 20px;
+		width: 1200px;
+	}
+	.cat-text {
+		font-size: 17px;
+		margin: 15px;
+	}
+	#dd{
+		margin: 10px 210px;
+	}
+	#tt{
+		margin: 10px 210px;
+	}
+	#coco{
+		margin: 10px 210px;
+	}
+	#momo{
+		margin: 10px 210px;
+	}
+	#chuchu{
+		margin: 10px 210px;
+	}
+	#lulu{
+		margin: 10px 210px;
+	}
+	#lala{
+		margin: 10px 210px;
+		margin-bottom: 30px;
+	}
+	#address {
+		float: right;
+		margin: 30px 30px 0 0px;
+		padding: 10px;
+	}
+	.clear {
+		clear: both;
+	}
+	footer {
+		width: 1150px;
+		height: 100px;
+		margin-top: 10px;
+		margin-left: 40px;
+		background-color: #2B2B2B;
+		color: white;
+	}
+</style>
+</head>
+<body>
+	<div id='white'>
+	<header>
+		<div id='top'>
+		로그인｜회원가입｜공지사항
+		</div>
+		<div class='clear'></div> <!-- float 속성 해제 -->
+		<div id='logo'>
+			<a href='index.html'><img src='./img/logo.jpg' width='230'></a>
+		</div>
+		<nav>
+			<div class='menu'>
+			<span> <img src='./img/petstar_button.png' height='40'> </span>
+				<div class='dropdown-content'>
+					<p> <a href='page13.html'>펫스타</a> </p>
+					<p> <a href='page14.html'>펫튜브</a> </p>
+					<p> <a href='page15.html'>펫툰</a> </p>
+				</div>
+			</div>
+			<div class='menu'>
+			<span> <img src='./img/pettube_button.png' height='40'> </span>
+				<div class='dropdown-content'>
+					<p> <a href='page16.html'>크림<br>히어로즈</a> </p>
+					<p> <a href='page17.html'>수리노을</a> </p>
+					<p> 이웃집의 백호 </p>
+					<p> 곰이탱이여우 </p>
+				</div>
+			</div>
+			<div class='menu'>
+			<span> <img src='./img/pettoon_button.png' height='40'> </span>
+				<div class='dropdown-content'>
+					<p> <a href='page18.html'>극한견주</a> </p>
+					<p> <a href='page19.html'>노곤하개</a> </p>
+					<p> 뽀짜툰 </p>
+					<p> 내 어린<br>고양이와<br>늙은 개 </p>
+				</div>
+			</div>
+			<div class='menu'>
+			<span> <img src='./img/gallery_button.png' height='40'> </span>
+				<div class='dropdown-content'>
+					<p> <a href='page01.html'>CATTUBE</a> </p>
+					<p> <a href='page02.html'>DOGTUBE</a> </p>
+					<p> <a href='page07.html'>CATTOON</a> </p>
+					<p> <a href='page08.html'>DOGTOON</a> </p>
+				</div>
+			</div>
+			<div class='menu'>
+			<span> <img src='./img/shop_button.png' height='40'> </span>
+				<div class='dropdown-content'>
+					<p> 텀블벅 </p>
+					<p> 굿즈샵 </p>
+					<p> 웹툰샵 </p>
+					<p> 굿즈 소식 </p>
+				</div>
+			</div>
+		</nav>
+	</header>
+		<div class='clear'></div> <!-- float 속성 해제 -->
+	<section>
+		<h1> + CREAMHEROES + </h1>
+		<ul class='click'>
+			<li><a href='#first'>정보</a></li>
+			<li> ｜ </li>
+			<li><a href='#second'>집사</a></li>
+			<li> ｜ </li>
+			<li><a href='#third'>고양이</a></li>
+		</ul>
+		<section id='first'>
+			<h3 class='top-text'> 01. 정보</h3>
+			<table border='1'>
+				<tr>
+					<td colspan='2'> <img src='./img/creamheroes.png'> </td>
+				</tr>
+				<tr>
+					<th> 이름 </th>
+					<td> 크림히어로즈 </td>
+				</tr>
+				<tr>
+					<th> 서비스 시작 </th>
+					<td> 2017년 1월 </td>
+				</tr>
+				<tr>
+					<th> 구독자 수 </th>
+					<td> 250만 명 </td>
+				</tr>
+				<tr>
+					<th> 공식채널 </th>
+					<td> <a href='https://www.youtube.com/channel/UCmLiSrat4HW2k07ahKEJo4w'>링크</a> </td>
+				</tr>
+				<tr>
+					<td colspan='2'> 일곱 고양이와 집사의 일상과 집사의 소소한 입담이 주 방송 콘텐츠인 방송.<br> 크림히어로즈의 '크림'은 디디 고양이의 크림색을 따왔다고 전해진다.<br><br> <b>일곱 고양이들은 마음을 따뜻하게 지켜주는 귀요미 영웅!</b> </td>
+			</table>
+		</section>
+		<section id='second'>
+			<h3 class='top-text'> 02. 집사 </h3>
+			<img src='./img/cream_master.jpg' width='800'>
+			<div class='info'>방송의 진행을 담당하는 유튜브 크리에이터.<br><br>
+
+			<크림히어로즈> 채널은 고양이 방송임에도 불구하고 진행하는 집사의 입담이 능수능란하여 고양이 보러 왔다가 집사한테 입덕하는 채널로도 알려져 있다. 고양이들의 행동 패턴을 상당 부분 파악하고 있어, 고양이의 행동에 맞춰 민첩하고 센스 넘치는 즉흥 더빙이 가능하다. (루루가 하품을 하면 바로 하품하는 소리를 내거나, 모모에게 회장 이미지를 부여하여 회장님 목소리를 내는 듯.) <br><br>
+
+			기존에 다니던 회사 소유의 고양이들이었던 디디, 티티, 코코, 모모가 회사 사정 상 버려질 위기에 처하자 회사를 인수하였고, 고양이들을 개인 소유로 데려오게 되었다.<br><br>
+
+			고양이들을 케어하며 진행하는 ASMR이나 일상 방송, 고양이들에게 사료를 대신 할 요리 방송과 고양이들의 일상을 영어일기로 더빙하거나, 라이브 스트리밍으로 실시간으로 독자와 질문 답변을 주고 받는 등 활발한 활동을 하고 있다.
+			</div>
+		</section>
+		<section id='third'>
+			<h3 class='top-text'> 03. 고양이 </h3>
+			<div class='info'>
+				1대 디디, 티티와 2대 코코, 모모 고양이들은 집사가 과거 다니던 회사에서 기르던 고양이들이었고, 3대 츄츄, 라라, 루루 고양이들은 크림 집사가 직접 입양했다. <br><br>
+				고양이는 고양이 개개인의 특성으로 인하여 합사가 유독 까다로운데 그런 것에 비해 일곱 고양이들은 별도의 서열이나 큰 트러블 없이 잘 지내는 편에 속한다.<br><br>
+				팬들 사이에서는 고양이 둘씩 짝지어 부를 때 한 글자씩 섞어 부르는 조합명을 사용한다. 예로 디티디티, 모코모코, 츄루츄루 등이 있다.
+			</div>
+			<ul class='click'>
+			<li><a href='#dd'>디디</a></li>
+			<li> ｜ </li>
+			<li><a href='#tt'>티티</a></li>
+			<li> ｜ </li>
+			<li><a href='#coco'>코코</a></li>
+			<li> ｜ </li>			
+			<li><a href='#momo'>모모</a></li>
+			<li> ｜ </li>
+			<li><a href='#chuchu'>츄츄</a></li>
+			<li> ｜ </li>
+			<li><a href='#lulu'>루루</a></li>
+			<li> ｜ </li>
+			<li><a href='#lala'>라라</a></li>
+		</ul>
+			<section id='dd'>
+				<h5 class='cat-text'> 03-1. 디디 </h5>
+				<table border='1'>
+					<tr>
+						<td colspan='2'> <img src='./img/cream_dd.jpg' width='800'> </td>
+					</tr>
+					<tr>
+						<th> 이름 </th>
+						<td> 디디 </td>
+					</tr>
+					<tr>
+						<th> 출생 </th>
+						<td> 2016년 1월 추정 </td>
+					</tr>
+					<tr>
+						<th> 품종 </th>
+						<td> 노르웨이 숲 믹스 / 크림 코트 </td>
+					</tr>
+					<tr>
+						<th> 눈 </th>
+						<td> 골드 </td>
+					</tr>
+					<tr>
+						<th> 성별 </th>
+						<td> 남아 </td>
+					</tr>
+					<tr>
+						<th> 별명 </th>
+						<td> 둔둔이, 인절미 등 </td>
+					</tr>
+				</table>
+		</section>
+		<div class='clear'></div> <!-- float 속성 해제 -->
+			<section id='tt'>
+				<h5 class='cat-text'> 03-2. 티티 </h5>
+				<table border='1'>
+					<tr>
+						<td colspan='2'> <img src='./img/cream_tt.jpg' width='800'> </td>
+					</tr>
+					<tr>
+						<th> 이름 </th>
+						<td> 티티 </td>
+					</tr>
+					<tr>
+						<th> 출생 </th>
+						<td> 2016년 1월 추정 </td>
+					</tr>
+					<tr>
+						<th> 품종 </th>
+						<td> 브리티쉬 숏헤어 믹스 / 실버 코트 </td>
+					</tr>
+					<tr>
+						<th> 눈 </th>
+						<td> 올리브 </td>
+					</tr>
+					<tr>
+						<th> 성별 </th>
+						<td> 여아 </td>
+					</tr>
+					<tr>
+						<th> 별명 </th>
+						<td> 여왕님, 자이언티티 등 </td>
+					</tr>
+				</table>
+		</section>
+		<div class='clear'></div> <!-- float 속성 해제 -->
+			<section id='coco'>
+				<h5 class='cat-text'> 03-3. 코코 </h5>
+				<table border='1'>
+					<tr>
+						<td colspan='2'> <img src='./img/cream_coco.jpg' width='800'> </td>
+					</tr>
+					<tr>
+						<th> 이름 </th>
+						<td> 코코 </td>
+					</tr>
+					<tr>
+						<th> 출생 </th>
+						<td> 2016년 10월 추정 </td>
+					</tr>
+					<tr>
+						<th> 품종 </th>
+						<td> 스코티쉬 스트레이트 / 화이트 코트 </td>
+					</tr>
+					<tr>
+						<th> 눈 </th>
+						<td> 골드 </td>
+					</tr>
+					<tr>
+						<th> 성별 </th>
+						<td> 남아 </td>
+					</tr>
+					<tr>
+						<th> 별명 </th>
+						<td> 계식이, 왕자님 등 </td>
+					</tr>
+				</table>
+		</section>
+		<div class='clear'></div> <!-- float 속성 해제 -->
+			<section id='momo'>
+				<h5 class='cat-text'> 03-4. 모모 </h5>
+				<table border='1'>
+					<tr>
+						<td colspan='2'> <img src='./img/cream_momo.jpg' width='800'> </td>
+					</tr>
+					<tr>
+						<th> 이름 </th>
+						<td> 모모 </td>
+					</tr>
+					<tr>
+						<th> 출생 </th>
+						<td> 2016년 10월 추정 </td>
+					</tr>
+					<tr>
+						<th> 품종 </th>
+						<td> 페르시안 엑조틱 숏헤어 / 치즈 태비 </td>
+					</tr>
+					<tr>
+						<th> 눈 </th>
+						<td> 골드 </td>
+					</tr>
+					<tr>
+						<th> 성별 </th>
+						<td> 남아 </td>
+					</tr>
+					<tr>
+						<th> 별명 </th>
+						<td> 회장님, 고오오오올드 등 </td>
+					</tr>
+				</table>
+		</section>
+		<div class='clear'></div> <!-- float 속성 해제 -->
+			<section id='chuchu'>
+				<h5 class='cat-text'> 03-5. 츄츄 </h5>
+				<table border='1'>
+					<tr>
+						<td colspan='2'> <img src='./img/cream_chuchu.jpg' width='800'> </td>
+					</tr>
+					<tr>
+						<th> 이름 </th>
+						<td> 츄츄 </td>
+					</tr>
+					<tr>
+						<th> 출생 </th>
+						<td> 2016년 12월 추정 </td>
+					</tr>
+					<tr>
+						<th> 품종 </th>
+						<td> 스코티쉬 폴드 / 삼색 고양이 </td>
+					</tr>
+					<tr>
+						<th> 눈 </th>
+						<td> 회색 ▶ 헤이즐넛 </td>
+					</tr>
+					<tr>
+						<th> 성별 </th>
+						<td> 여아 </td>
+					</tr>
+					<tr>
+						<th> 별명 </th>
+						<td> 시츄, 츄차원 등 </td>
+					</tr>
+				</table>
+		</section>
+		<div class='clear'></div> <!-- float 속성 해제 -->
+			<section id='lulu'>
+				<h5 class='cat-text'> 03-6. 루루 </h5>
+				<table border='1'>
+					<tr>
+						<td colspan='2'> <img src='./img/cream_lulu.jpg' width='800'> </td>
+					</tr>
+					<tr>
+						<th> 이름 </th>
+						<td> 루루 </td>
+					</tr>
+					<tr>
+						<th> 출생 </th>
+						<td> 2017년 1월 추정 </td>
+					</tr>
+					<tr>
+						<th> 품종 </th>
+						<td> 먼치킨 믹스 / 갈색 고양이 태비 </td>
+					</tr>
+					<tr>
+						<th> 눈 </th>
+						<td> 골드 </td>
+					</tr>
+					<tr>
+						<th> 성별 </th>
+						<td> 남아 </td>
+					</tr>
+					<tr>
+						<th> 별명 </th>
+						<td> 루랑이, 루람쥐 </td>
+					</tr>
+				</table>
+		</section>
+		<div class='clear'></div> <!-- float 속성 해제 -->
+			<section id='lala'>
+				<h5 class='cat-text'> 03-7. 라라 </h5>
+				<table border='1'>
+					<tr>
+						<td colspan='2'> <img src='./img/cream_lala.jpg' width='800'> </td>
+					</tr>
+					<tr>
+						<th> 이름 </th>
+						<td> 라라 </td>
+					</tr>
+					<tr>
+						<th> 출생 </th>
+						<td> 2017년 1월 </td>
+					</tr>
+					<tr>
+						<th> 품종 </th>
+						<td> 먼치킨 / 화이트 코트 </td>
+					</tr>
+					<tr>
+						<th> 눈 </th>
+						<td> 짙은 바다 </td>
+					</tr>
+					<tr>
+						<th> 성별 </th>
+						<td> 여아 </td>
+					</tr>
+					<tr>
+						<th> 별명 </th>
+						<td> 먐먀, 족제비 등 </td>
+					</tr>
+				</table>
+		</section>
+		</section>
+		<div class='clear'></div> <!-- float 속성 해제 -->
+	<footer>
+		<div id='text'>
+			1851048 유지원 <br>
+			각 사진의 저작권은 원작자에게 있습니다.
+		</div>
+		<div id='address'>
+			**.***********@gmail.com
+		</div>
+	</footer>
+	</div>
+</body>
+</html>

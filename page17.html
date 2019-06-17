@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> surinoel </title>
+<style>
+	* {
+		padding: 0px;
+		margin: 0px;
+	}
+	#white {
+		width: 1200px;
+		margin: auto;
+	}
+	header{
+		width: 1200px;
+		height: 150px;
+		margin-top: 10px;
+		border: solid 0px #cccccc;
+	}
+	#logo {
+		float: left;
+	}
+	#top {
+		float: right;
+		margin: 20px 10px 70px 0;
+		font-size: 13px;
+	}
+	nav {
+		display: inline-block;
+		width: 950px;
+		height: 50px;
+		margin-top: 30px;
+		border: solid 0px #cccccc;
+		float: left;
+		background-color: #FF0000
+	}
+	span > img {
+		width: 100px;
+		height: 45px;
+		float: left;
+		margin: 5px 41px;
+		list-style-type: none;
+		margin-top: 2px;
+	}
+	.dropdown-content {
+		display: none; /* 크기 설정 하지 않겠다! 라는 뜻 */
+		position: absolute; 
+		background-color: #FFFFFF;
+		width: 100px; /* 리스트의 크기 */
+		padding: 12px 16px;
+		margin: 50px 25px;
+		font-size: 13px;
+		color: #550000;
+		text-align: center;
+		border: dashed 1px #cccccc;
+	}
+	.menu {
+		display: inline-block;
+	}
+	.menu:hover .dropdown-content {
+		display: block; 
+		/* 마우스 포인터를 가져가면 블록으로 보여지게 하라 */
+		/* 이 코드 때문에 드롭다운으로 보임 */
+	}
+	.dropdown-content p {
+		margin: 15px 0;
+	}
+	a {
+		color: black;
+		text-decoration: none;
+	}
+	li {
+		list-style-type: none;
+	}
+	section {
+		float: left;
+		margin-top: 10px;
+		border: solid 0px #cccccc;
+	}
+	h1 {
+		font-size: 30px;
+		margin: 20px 450px;
+	}
+	.click {
+		width: 500px;
+		height: 20px;
+		padding: 20px;
+		margin: 15px;
+		background-color: #white;
+		border: dashed 2px #cccccc;
+		font-size: 17px;
+		font-weight: bold;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.click li {
+		display: inline;
+	}
+	#cat li {
+		display: inline;
+	}
+		#text {
+		float: left;
+		margin: 30px 0 0 20px;
+		padding: 10px;
+	}
+	.top-text {
+		font-size: 20px;
+		margin: 10px;
+	}
+	.cat-text {
+		font-size: 17px;
+		margin: 15px;
+	}
+	.text-info {
+		font-size: 17px;
+		margin: 15px;
+	}
+	table, tr, th, td {
+		border-collapse: collapse;
+		border: dashed 2px #FFDE72;
+		background-color: white;
+		padding: 10px;
+		text-align: center;
+	}
+	#noel{
+		margin: 10px 270px;
+	}
+	#suri{
+		margin: 10px 270px;
+	}
+	#raon{
+		margin: 10px 270px;
+	}
+	#izu{
+		margin: 10px 270px;
+	}
+	#soul{
+		margin: 10px 270px;
+		margin-bottom: 30px;
+	}
+	.info {
+		margin: 20px;
+		width: 1200px;
+	}
+	.info img {
+		margin: 30px 185px;
+	}
+	.cat-text {
+		font-size: 17px;
+		margin: 15px;
+	}
+	#address {
+		float: right;
+		margin: 30px 30px 0 0px;
+		padding: 10px;
+	}
+	.clear {
+		clear: both;
+	}
+	footer {
+		width: 1150px;
+		height: 100px;
+		margin-top: 10px;
+		margin-left: 40px;
+		background-color: #2B2B2B;
+		color: white;
+	}
+</style>
+</head>
+<body>
+	<div id='white'>
+	<header>
+		<div id='top'>
+		로그인｜회원가입｜공지사항
+		</div>
+		<div class='clear'></div> <!-- float 속성 해제 -->
+		<div id='logo'>
+			<a href='index.html'><img src='./img/logo.jpg' width='230'></a>
+		</div>
+		<nav>
+			<div class='menu'>
+			<span> <img src='./img/petstar_button.png' height='40'> </span>
+				<div class='dropdown-content'>
+					<p> <a href='page13.html'>펫스타</a> </p>
+					<p> <a href='page14.html'>펫튜브</a> </p>
+					<p> <a href='page15.html'>펫툰</a> </p>
+				</div>
+			</div>
+			<div class='menu'>
+			<span> <img src='./img/pettube_button.png' height='40'> </span>
+				<div class='dropdown-content'>
+					<p> <a href='page16.html'>크림<br>히어로즈</a> </p>
+					<p> <a href='page17.html'>수리노을</a> </p>
+					<p> 이웃집의 백호 </p>
+					<p> 곰이탱이여우 </p>
+				</div>
+			</div>
+			<div class='menu'>
+			<span> <img src='./img/pettoon_button.png' height='40'> </span>
+				<div class='dropdown-content'>
+					<p> <a href='page18.html'>극한견주</a> </p>
+					<p> <a href='page19.html'>노곤하개</a> </p>
+					<p> 뽀짜툰 </p>
+					<p> 내 어린<br>고양이와<br>늙은 개 </p>
+				</div>
+			</div>
+			<div class='menu'>
+			<span> <img src='./img/gallery_button.png' height='40'> </span>
+				<div class='dropdown-content'>
+					<p> <a href='page01.html'>CATTUBE</a> </p>
+					<p> <a href='page02.html'>DOGTUBE</a> </p>
+					<p> <a href='page07.html'>CATTOON</a> </p>
+					<p> <a href='page08.html'>DOGTOON</a> </p>
+				</div>
+			</div>
+			<div class='menu'>
+			<span> <img src='./img/shop_button.png' height='40'> </span>
+				<div class='dropdown-content'>
+					<p> 텀블벅 </p>
+					<p> 굿즈샵 </p>
+					<p> 웹툰샵 </p>
+					<p> 굿즈 소식 </p>
+				</div>
+			</div>
+		</nav>
+	</header>
+		<div class='clear'></div> <!-- float 속성 해제 -->
+	<section>
+		<h1> + 수리노을SURINOEL + </h1>
+		<ul class='click'>
+			<li><a href='#first'>정보</a></li>
+			<li> ｜ </li>
+			<li><a href='#second'>집사</a></li>
+			<li> ｜ </li>
+			<li><a href='#third'>고양이</a></li>
+		</ul>
+		<section id='first'>
+			<h3 class='top-text'> 01. 정보</h3>
+			<table border='1'>
+				<tr>
+					<td colspan='2'> <img src='./img/surinoel.jpg' width='400'> </td>
+				</tr>
+				<tr>
+					<th> 이름 </th>
+					<td> 수리노을 </td>
+				</tr>
+				<tr>
+					<th> 서비스 시작 </th>
+					<td> 2010년 11월 21일 </td>
+				</tr>
+				<tr>
+					<th> 구독자 수 </th>
+					<td> 130만 명 </td>
+				</tr>
+				<tr>
+					<th> 공식채널 </th>
+					<td> <a href='https://www.youtube.com/user/JungwooPark79'>링크</a> </td>
+				</tr>
+				<tr>
+					<td colspan='2'> 수리, 노을, 라온, 이즈, 소울. <br><br>5마리 고양이 가족의 일상. </td>
+			</table>
+		</section>
+		<section id='second'>
+			<h3 class='top-text'> 02. 집사 </h3>
+			<h5 class='text-info'> 02-1. 남집사 </h5>
+			<div class='info'>
+			<b>"나의 역할은 빗겨주고 먹여주는 것뿐."</b><br><br>
+			2016년 무렵, 아이가 태어나면서 회사를 그만두고 유튜브 크리에이터로 전향했다. 여집사 혼자서 아기집사를 포함하여 다섯고양이까지 케어하기에는 너무 버거운 것이었다. 그렇다고 고양이들을 포기할 수 없었기에 회사를 그만 두고 본인은 고양이들 케어와 유튜브 채널 운영을 하기로 했고 여집사는 아기집사 육아를 하고 있다고 근황을 전했다. <br><br>
+			유튜브의 영상들은 모두 그의 손에서 편집되어 나왔다. 크리에이터로 전향하기 전에는 디스트릭트 사 영상감독으로 일했으며, 그 전에는 Mnet에서 FD로 일한 적이 있다고 한다. 영상 편집 실력과 센스가 매우 뛰어나다. <b>별명은 필냥이.</b>
+			</div>
+			<h5 class='text-info'> 02-2. 여집사 </h5>
+			<div class='info'>남집사의 아내로, 이름이나 모습을 드러낸 적이 없다. 우연히 모습이 드러나도 윤곽 실루엣으로만 등장하거나 모자이크 처리된다. 주로 암컷 고양이들의 목욕을 담당하며, 고양이 라온이 여집사를 잘 따른다. 기계에 대한 지식이 해박하고 조립하는 데에도 뛰어나 관련 영상이 몇 차례 나왔다. </div>
+			<h5 class='text-info'> 02-3. 꼬마집사 </h5>
+			<div class='info'>집사 부부의 아들이다. 처음 등장하였을 때 고양이와 함께 조회수 시너지를 내 500만을 가볍게 돌파했다. 나이에 맞게 고양이들에게 호기심을 가지고 적극적으로 다가가고 있다. 고양이들이 피한다는 게 문제. </div>
+		</section>
+		<section id='third'>
+			<h3 class='top-text'> 03. 고양이 </h3>
+			<div class='info'>
+			<img src='./img/surinoel_cat.png'
+			</div>
+			<ul class='click'>
+			<li><a href='#noel'>노을</a></li>
+			<li> ｜ </li>
+			<li><a href='#suri'>수리</a></li>
+			<li> ｜ </li>
+			<li><a href='#raon'>라온</a></li>
+			<li> ｜ </li>			
+			<li><a href='#izu'>이즈</a></li>
+			<li> ｜ </li>
+			<li><a href='#soul'>소울</a></li>
+		</ul>
+			<section id='noel'>
+				<h5 class='cat-text'> 03-1. 노을 </h5>
+				<table border='1'>
+					<tr>
+						<td colspan='2'> <iframe width="626" height="360" src="https://www.youtube.com/embed/QbEG1SIy2o8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </td>
+					</tr>
+					<tr>
+						<th> 이름 </th>
+						<td> 노을 </td>
+					</tr>
+					<tr>
+						<th> 출생 </th>
+						<td> 2012년 7월 7일 </td>
+					</tr>
+					<tr>
+						<th> 품종 </th>
+						<td> 스코티쉬 폴드 </td>
+					</tr>
+					<tr>
+						<th> 성별 </th>
+						<td> 남아 </td>
+					</tr>
+					<tr>
+						<th> 별명 </th>
+						<td> 박노을, 노을아재 </td>
+					</tr>
+				</table>
+		</section>
+		<div class='clear'></div> <!-- float 속성 해제 -->
+			<section id='suri'>
+				<h5 class='cat-text'> 03-2. 수리 </h5>
+				<table border='1'>
+					<tr>
+						<td colspan='2'> <iframe width="626" height="360" src="https://www.youtube.com/embed/j9--agKvTck" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </td>
+					</tr>
+					<tr>
+						<th> 이름 </th>
+						<td> 수리 </td>
+					</tr>
+					<tr>
+						<th> 출생 </th>
+						<td> 2012년 9월 22일 </td>
+					</tr>
+					<tr>
+						<th> 품종 </th>
+						<td> 스코티쉬 스트레이트 </td>
+					</tr>
+					<tr>
+						<th> 성별 </th>
+						<td> 여아 </td>
+					</tr>
+					<tr>
+						<th> 별명 </th>
+						<td> 박수리, 돼냥이 </td>
+					</tr>
+				</table>
+		</section>
+		<div class='clear'></div> <!-- float 속성 해제 -->
+			<section id='raon'>
+				<h5 class='cat-text'> 03-3. 라온 </h5>
+				<table border='1'>
+					<tr>
+						<td colspan='2'> <iframe width="626" height="360" src="https://www.youtube.com/embed/wi2Wu8qXaFE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </td>
+					</tr>
+					<tr>
+						<th> 이름 </th>
+						<td> 라온 </td>
+					</tr>
+					<tr>
+						<th> 출생 </th>
+						<td> 2015년 3월 29일 </td>
+					</tr>
+					<tr>
+						<th> 품종 </th>
+						<td> 스코티쉬 폴드 </td>
+					</tr>
+					<tr>
+						<th> 성별 </th>
+						<td> 여아 </td>
+					</tr>
+					<tr>
+						<th> 별명 </th>
+						<td> 박라온, 라온공주 </td>
+					</tr>
+				</table>
+		</section>
+		<div class='clear'></div> <!-- float 속성 해제 -->
+			<section id='izu'>
+				<h5 class='cat-text'> 03-4. 이즈 </h5>
+				<table border='1'>
+					<tr>
+						<td colspan='2'> <iframe width="626" height="360" src="https://www.youtube.com/embed/0k3O60pnmso" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </td>
+					</tr>
+					<tr>
+						<th> 이름 </th>
+						<td> 이즈 </td>
+					</tr>
+					<tr>
+						<th> 출생 </th>
+						<td> 2015년 3월 29일 </td>
+					</tr>
+					<tr>
+						<th> 품종 </th>
+						<td> 스코티쉬 폴드 </td>
+					</tr>
+					<tr>
+						<th> 성별 </th>
+						<td> 남아 </td>
+					</tr>
+					<tr>
+						<th> 별명 </th>
+						<td> 박이즈, 곰즈 </td>
+					</tr>
+				</table>
+		</section>
+		<div class='clear'></div> <!-- float 속성 해제 -->
+			<section id='soul'>
+				<h5 class='cat-text'> 03-5. 소울 </h5>
+				<table border='1'>
+					<tr>
+						<td colspan='2'> <iframe width="626" height="360" src="https://www.youtube.com/embed/pMhfRsOWaPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </td>
+					</tr>
+					<tr>
+						<th> 이름 </th>
+						<td> 소울 </td>
+					</tr>
+					<tr>
+						<th> 출생 </th>
+						<td> 2015년 3월 29일 </td>
+					</tr>
+					<tr>
+						<th> 품종 </th>
+						<td> 스코티쉬 스트레이트 </td>
+					</tr>
+					<tr>
+						<th> 성별 </th>
+						<td> 남아 </td>
+					</tr>
+					<tr>
+						<th> 별명 </th>
+						<td> 박소울, 쏘우리 </td>
+					</tr>
+				</table>
+		</section>
+		</section>
+		<div class='clear'></div> <!-- float 속성 해제 -->
+	<footer>
+		<div id='text'>
+			1851048 유지원 <br>
+			각 사진의 저작권은 원작자에게 있습니다.
+		</div>
+		<div id='address'>
+			**.***********@gmail.com
+		</div>
+	</footer>
+	</div>
+</body>
+</html>

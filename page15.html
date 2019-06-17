@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title> gallery_dogtoon </title>
+	<title> pettoon </title>
 <style>
 	* {
 		padding: 0px;
@@ -78,36 +78,36 @@
 		margin-top: 10px;
 		border: solid 0px #cccccc;
 	}
-	table {
-		border-collapse: collapse;
-		border: dotted 2px #cccccc;
-		width: 800px;
-		margin: 20px 95px;
-		text-align: center;
-		color: #550000;
-		font-size: 30px;
-		font-weight: bold;
-		text-align: center;
-	}
-	td {
-		padding: 30px;
-		border: dotted 2px #cccccc;
-	}
-	.switch {
-		transition: transform 500ms;
-	}
-	.switch:hover {
- 		transform: rotateX(35deg);
- 		transition: transform 500ms;
-	}
-	.next {
-		color: #550000;
-		font-size: 15px;
-	}
-	#text {
+		#text {
 		float: left;
 		margin: 30px 0 0 20px;
 		padding: 10px;
+	}
+	h1 {
+		font-size: 30px;
+		margin: 20px 50px 0 50px;
+	}
+	#main {
+		width: 500px;
+		margin: 50px;
+		float: left;
+	}
+	#file1 {
+		transform: rotate(-15deg);
+		padding: 15px;
+		margin-top: 40px;
+		margin-left: 30px;
+	}
+	#file2 {
+		padding: 15px;
+		margin-top: 40px;
+		margin-left: 30px;
+	}
+	#file3 {
+		transform: rotate(15deg);
+		padding: 15px;
+		margin-top: 40px;
+		margin-left: 30px;
 	}
 	#address {
 		float: right;
@@ -186,20 +186,13 @@
 	</header>
 		<div class='clear'></div> <!-- float 속성 해제 -->
 	<section>
-		<table border='1'>
-			<tr>
-				<td colspan="4"> GALLERY : DOGTOON </td>
-			</tr>
-			<tr>
-				<td class='next'> <a href='page07.html'>◀CATTOON</a> </td>
-				<td> <a href='page11.html'>
-					<img src='./img/polarsom_gallery_button.jpg' width='300' class='switch'></a> </td>
-				<td> <a href='page12.html'>
-					<img src='./img/lazydog_gallery_button.jpg' width='300' class='switch'></a> </td>
-				<td class='next'> <a href='page01.html'>CATTUBE▶</a> </td>
-			</tr>
-		</table>
-	</section>
+		<h1> ▶ 펫툰/Pettoon </h1>
+		<p id='main'>
+			 &nbsp;&nbsp;펫스타가 Pet+STAR로 결합되어 탄생한 신조어라면, <b>펫툰</b>은 <b>Pet+Toon(만화)</b>가 결합되어 새롭게 생겨난 이름이라고 할 수 있다. 시대적으로 웹툰이 접근성이 스마트폰이나 웹을 통하여 높아진 만큼, 만화를 연재하는 것을 통하여 독자들과 소통하고 또는 반려동물 자체가 주인공으로 채택되어 그들의 일상을 담아 만화로 표현하는 것으로도 그들은 인기를 얻게 된다. 현재 서비스 되는 웹툰 플랫폼들이 다양한 만큼, 이 카테고리에서는 다양한 웹툰 플랫폼에서 많은 독자들의 사랑을 받고 있는 펫스타를 다루게 될 것이다. </p>
+		<img src='./img/naver.jpg' width='100' id='file1'>
+		<img src='./img/ktoon.jpg' width='100' id='file2'>
+		<img src='./img/daum.jpg' width='100' id='file3'>
+		</section>
 		<div class='clear'></div> <!-- float 속성 해제 -->
 	<footer>
 		<div id='text'>
