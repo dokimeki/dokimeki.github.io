@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title> gallery_cattube </title>
+<meta charset="utf-8">
+<title> </title>
 <style>
 	* {
 		padding: 0px;
@@ -78,31 +78,57 @@
 		margin-top: 10px;
 		border: solid 0px #cccccc;
 	}
-	table {
-		border-collapse: collapse;
-		border: dotted 2px #cccccc;
-		width: 800px;
-		margin: 20px 95px;
-		text-align: center;
-		color: #550000;
-		font-size: 30px;
-		font-weight: bold;
-		text-align: center;
-	}
-	td {
-		padding: 30px;
-		border: dotted 2px #cccccc;
-	}
-	.switch {
-		transition: transform 500ms;
-	}
-	.switch:hover {
- 		transform: rotateX(35deg);
- 		transition: transform 500ms;
-	}
-	.next {
-		color: #550000;
-		font-size: 15px;
+#login {
+	clear: both;
+	width: 1000px;
+	height: 500px;
+	background-color: white;
+	margin: 50px 120px;
+	border: dashed 2px gray;
+}
+#login img {
+	float: left;
+	margin: 30px 70px;
+}
+h2 {
+	padding: 130px 100px 20px 100px;
+}
+table {
+	border-collapse: collapse;
+}
+th, td{
+	border: solid 0px #123456;
+}
+#btn {
+	width: 80px;
+	height: 50px;
+	border-radius: 5px;
+	margin: 10px;
+	background-color: white;
+}
+#t1 {
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+	text-align: left;
+	text-shadow: 3px 3px 2px gray;
+}
+.s1 {
+	font-weight: bold;
+	text-decoration: underline;
+	padding: 20px;
+}
+a { 
+	color: black;
+	text-decoration-color: black;
+}
+	footer {
+		width: 1150px;
+		height: 100px;
+		margin-top: 10px;
+		margin-left: 40px;
+		background-color: #2B2B2B;
+		color: white;
 	}
 	#text {
 		float: left;
@@ -116,14 +142,6 @@
 	}
 	.clear {
 		clear: both;
-	}
-	footer {
-		width: 1150px;
-		height: 100px;
-		margin-top: 10px;
-		margin-left: 40px;
-		background-color: #2B2B2B;
-		color: white;
 	}
 </style>
 </head>
@@ -186,19 +204,28 @@
 	</header>
 		<div class='clear'></div> <!-- float 속성 해제 -->
 	<section>
-		<table border='1'>
-			<tr>
-				<td colspan="4"> GALLERY : CATTUBE </td>
-			</tr>
-			<tr>
-				<td class='next'> <a href='page08.html'>◀DOGTOON</a> </td>
-				<td> <a href='page03.html'>
-					<img src='./img/creamheroes_gallery_button.jpg' width='300' class='switch'></a> </td>
-				<td> <a href='page04.html'>
-					<img src='./img/surinoel_gallery_button.jpg' width='300' class='switch'></a> </td>
-				<td class='next'> <a href='page02.html'>DOGTUBE▶</a> </td>
-			</tr>
-		</table>
+	<div id='login'>
+		<img src='img/loginimage-gray.png'>
+		<h2> 로그인 후 이용해주세요 '△' </h2>
+	<table>
+		<tr>
+		<th colspan='3' id='t1'> Member Login </th>
+		</tr>
+		<tr>
+		<td> ID </td>
+		<td> <input type=text> </td>
+		<td rowspan='2'> <button id='btn'><span>LOGIN</span></button> </td>
+		</tr>
+		<tr>
+			<td> PW </td>
+			<td> <input type=text> </td>
+		</tr>
+		<tr>
+			<td colspan='3'>
+				<span class='s1'><a href='homepage9.html'>SIGN UP</a></span> <span class='s1'> ID/PASSWORD </span>
+			</td>
+		</tr>
+	</table>
 	</section>
 		<div class='clear'></div> <!-- float 속성 해제 -->
 	<footer>

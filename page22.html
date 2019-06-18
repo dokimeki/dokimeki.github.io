@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title> gallery_cattube </title>
+<meta charset="utf-8">
+<title> </title>
 <style>
 	* {
 		padding: 0px;
@@ -78,31 +78,47 @@
 		margin-top: 10px;
 		border: solid 0px #cccccc;
 	}
-	table {
-		border-collapse: collapse;
-		border: dotted 2px #cccccc;
-		width: 800px;
-		margin: 20px 95px;
-		text-align: center;
-		color: #550000;
-		font-size: 30px;
-		font-weight: bold;
-		text-align: center;
-	}
-	td {
-		padding: 30px;
-		border: dotted 2px #cccccc;
-	}
-	.switch {
-		transition: transform 500ms;
-	}
-	.switch:hover {
- 		transform: rotateX(35deg);
- 		transition: transform 500ms;
-	}
-	.next {
-		color: #550000;
-		font-size: 15px;
+#back{
+	width: 1000px;
+	height: 500px;
+	background-color: white;
+	margin: 50px 120px;
+	border: dashed 2px gray;
+}
+h1 {
+	font-size: 50px;
+	color: gray;
+	text-align: center;
+	padding-top: 50px;
+}
+#form {
+	padding: 10px;
+	margin: auto;
+	margin-top: 60px;
+	border: dashed 2px black;
+}
+#form tr, td {
+	padding: 10px 0;
+	border-bottom: dotted 1px gray;
+}
+.long {
+	width: 400px;
+}
+#signup {
+	padding-right: 10px;
+	text-align: right;
+}
+a { 
+	color: black;
+	text-decoration-color: black;
+}
+	footer {
+		width: 1150px;
+		height: 100px;
+		margin-top: 10px;
+		margin-left: 40px;
+		background-color: #2B2B2B;
+		color: white;
 	}
 	#text {
 		float: left;
@@ -116,14 +132,6 @@
 	}
 	.clear {
 		clear: both;
-	}
-	footer {
-		width: 1150px;
-		height: 100px;
-		margin-top: 10px;
-		margin-left: 40px;
-		background-color: #2B2B2B;
-		color: white;
 	}
 </style>
 </head>
@@ -186,19 +194,31 @@
 	</header>
 		<div class='clear'></div> <!-- float 속성 해제 -->
 	<section>
-		<table border='1'>
-			<tr>
-				<td colspan="4"> GALLERY : CATTUBE </td>
-			</tr>
-			<tr>
-				<td class='next'> <a href='page08.html'>◀DOGTOON</a> </td>
-				<td> <a href='page03.html'>
-					<img src='./img/creamheroes_gallery_button.jpg' width='300' class='switch'></a> </td>
-				<td> <a href='page04.html'>
-					<img src='./img/surinoel_gallery_button.jpg' width='300' class='switch'></a> </td>
-				<td class='next'> <a href='page02.html'>DOGTUBE▶</a> </td>
-			</tr>
-		</table>
+	<div id='back'>
+	<h1> ✦ SUPPORTER SIGNUP ✦ </h1>
+	<form>
+	<table id='form'>
+		<tr>
+		<td> ✧ 이름 </td>
+		<td class='long'> <input type='text'> </td>
+		</tr>
+		<tr>
+		<td> ✧ 아이디 </td>
+		<td class='long'> <input type='text'> </td>
+		</tr>
+		<tr>
+		<td> ✧ 비밀번호 </td>
+		<td class='long'> <input type='password'> </td>
+		</tr>
+		<tr>
+		<td> ✧ 이메일 </td>
+		<td class='long'> <input type='email' placeholder='정확한 이메일을 넣으세요'><input type='submit' value='확인'></button></td>
+		</tr>
+	<tr>
+		<td colspan='2' id='signup'> <input type='submit' value='확인'> </td>
+</td>
+</table>
+</form>
 	</section>
 		<div class='clear'></div> <!-- float 속성 해제 -->
 	<footer>
